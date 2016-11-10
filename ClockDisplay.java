@@ -23,21 +23,22 @@ public class ClockDisplay
  /**
  * Fija un tiempo determinado en horas y minutos
  */
- public void fijarTiempoReloj(int nuevaHora,int nuevoMinutos)
- {
+ public void fijarTiempoReloj(int nuevaHora,int nuevoMinutos){
      hora.setValue(nuevaHora);
      minuto.setValue(nuevoMinutos);
             
   }
-    
+  
  /**
- * Avanza un minuto
+ * Avanzo los minutos de uno en uno.
  */
+ public void avanzarMinuto(){
+          minuto.increment();  
+         if (minuto.getValue() == 0) {
+             hora.increment();       
+          }     
+  }
+  
    
-// public void avanzarMinuto(){
-    // minuto.increment();
-    //    if(minuto.getValor() == 0)
-    
-    
  }
 
