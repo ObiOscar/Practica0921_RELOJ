@@ -39,6 +39,11 @@ public class ClockDisplay
           }     
   }
   
-   
+ /**
+ * Muestro una cadena de caracteres 5 y siempre 5.
+ */
+public String obtenerFechaComoCadena() {
+		return hora.getDisplayValue() + ":" + minuto.getDisplayValue();   
+  }
  }
 
